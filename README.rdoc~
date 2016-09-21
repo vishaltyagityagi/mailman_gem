@@ -1,0 +1,33 @@
+This is a sample app showing how to fetch and parse emails using mailman gem. 
+link:https://github.com/titanous/mailman
+
+NOTE  if u are using Ruby < 2.0.0 please use 
+
+gem 'mailman'
+ 
+ If using ruby>2.0.0  please use gem 
+
+gem 'maildir', '< 2.1.0'
+
+USE ruby 1.9.3
+gem 'rails', '3.2.11'
+
+== How to run this application
+
+1. At the command prompt, clone this app:
+       git clone git@github.com:mohitjain/mailman_example_code.git
+
+2. Set up project
+
+3. Go to http://localhost:3000/messages to see the list of messages been fetched:
+
+4. Run  scripts/mailman_server start command to fetch email file and change your gmail username and password in mailman_server file to test the application.
+
+5. Run mailman server by running scripts/mailman_server start command
+
+6. Send an email to email specified in the script/mailman_server file and you can see new messages at http://localhost:3000/messages. Attachments are also handled properly in this demo app. 
+
+
+== See a blog post on the same code
+4. More information about this application can be found at:
+link:http://www.codebeerstartups.com/2013/01/how-to-fetch-and-parse-emails-in-ruby-on-rails/
